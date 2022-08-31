@@ -1,0 +1,16 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+projectName: opdemo
+repo: github.com/minhjh/opdemo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: app
+  kind: AppService
+  path: github.com/minhjh/opdemo/api/v1
+  version: v1
+version: "3"
